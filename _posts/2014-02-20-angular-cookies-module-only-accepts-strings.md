@@ -1,3 +1,8 @@
+---
+layout: post
+title: Angular $cookies module only accepts strings!
+---
+
 Достаточно долго, провозился с дебагом ангулар приложения, пока не выяснил, что используя $cookies, можно выставлять только строки:
 
 <div class="highlight">
