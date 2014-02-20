@@ -13,7 +13,7 @@ Here we set the renderer class to the particular view:
 
 <script src="https://gist.github.com/kaygorodov/9121799.js"></script>
 
-Additionally, I don't want to receive such root element in my test, in order to achieve it I use the following TestCase:
+Additionally, I don't want to have such root element when I work with DRF in my tests, in order to achieve it, I use the following TestCase:
 
 <script src="https://gist.github.com/kaygorodov/9122205.js"></script>
 
