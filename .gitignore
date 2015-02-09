@@ -1,7 +1,0 @@
-*.iml
-.idea
-_site
-
-*.pid
-cache/
-output/
