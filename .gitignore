@@ -3,5 +3,6 @@
 _site
 
 *.pid
+*.pyc
 cache/
 output/
