@@ -1,6 +1,0 @@
-name: Kaygorodov Andrey Blog
-markdown: redcarpet
-pygments: true
-distination: ./_site
-source: .
-keep_files:  ['.git']
