@@ -2,6 +2,7 @@
 .idea
 _site
 
+*.md~
 *.pid
 *.pyc
 cache/
