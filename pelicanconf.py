@@ -20,10 +20,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = () 
 
 # Social widget
 SOCIAL = (('You can add links in your config file', '#'),
@@ -36,3 +33,26 @@ DEFAULT_PAGINATION = 10
 
 STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
+THEME = '/home/kaygrodov/pelican-themes/voidy-bootstrap/'
+
+
+SITESUBTITLE ='A passionate software engineer.'
+SITETAG = "- a passionate software engineer, geek and just a good man."
+
+# Extra stylesheets, for bootstrap overrides or additional styling.
+STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
+
+# Put taglist at end of articles, and use the default sharing button implementation.
+CUSTOM_ARTICLE_FOOTERS = ("taglist.html", "sharing.html", )
+CUSTOM_SCRIPTS_ARTICLE = "sharing_scripts.html"
+
+# Default sidebar template. Omit this line for single column mode without sidebar.
+SIDEBAR = "sidebar.html"
+
+SOCIAL = (('Twitter', 'https://twitter.com/kaygorodov',
+           'fa fa-twitter-square fa-fw fa-lg'),
+          ('LinkedIn', 'https://linkedin.com/in/kaygorodov',
+           'fa fa-linkedin-square fa-fw fa-lg'),
+          ('GitHub', 'https://github.com/kaygorodov',
+           'fa fa-github-square fa-fw fa-lg'),)
