@@ -34,7 +34,7 @@ DEFAULT_PAGINATION = 10
 STATIC_PATHS = ['extra/CNAME']
 EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 
-THEME = '/home/kaygrodov/pelican-themes/voidy-bootstrap/'
+THEME = '/Users/andreykaygorodov/pelican-themes/voidy-bootstrap/'
 
 
 SITESUBTITLE ='A passionate software engineer.'
