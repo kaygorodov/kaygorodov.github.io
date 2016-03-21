@@ -8,7 +8,7 @@
     <meta name="author" content="Andrey Kaygorodov" />
     <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
 
-    <title>Reached The Goal to Solve 50 Problems on SPOJ - Andrey Kaygorodov</title>
+    <title>The Beard - Logicless Template Engine in Scala! - Andrey Kaygorodov</title>
 
    
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
@@ -67,31 +67,62 @@
 <article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
   <header class="article-header">
 <abbr class="article-header-date">
-  Sat 28 February 2015
+  Mon 21 March 2016
 </abbr> <h1>
-  <a href="/reached-the-goal-to-solve-50-problems-on-spoj.html" rel="bookmark"
-     title="Permalink to Reached The Goal to Solve 50 Problems on SPOJ">
-    Reached The Goal to Solve 50 Problems on SPOJ
+  <a href="/the-beard-logicless-template-engine-in-scala.html" rel="bookmark"
+     title="Permalink to The Beard - Logicless Template Engine in Scala!">
+    The Beard - Logicless Template Engine in Scala!
   </a>
 </h1><div class="article-header-info">
   <p>
       Posted by <a href="/author/andrey-kaygorodov.html">Andrey Kaygorodov</a>
     in 
-    <a href="/category/computer-science.html">
-      Computer Science</a>
+    <a href="/category/blog.html">
+      Blog</a>
     &nbsp;&nbsp;
   </p>
 </div> <!-- /.article-header-info -->  </header>
   <div class="content-body" itemprop="text articleBody">
-	<p>Actually, I completed my 50th problem on Feb 12th more than two weeks ago. But then, I went to the Netherlands. So, due to the lack of time, I am only now writing this post.</p>
-<p><img alt="Spoj 50 solved" src="/images/spoj50.png" /></p>
-<p>My next target will be to become a blue one on TopCoder. From this point onwards, I am going to regularly participate in TopCoder's SRMs.</p>
+	<p>Recently, I was interested in the language design and was reading a few books devoted to it. So, when the opportunity to work on the template engine showed up, I decided not to lose it.
+It is called the <a href="https://github.com/zalando/beard">Beard</a>. It is a minimalistic template engine written in Scala. </p>
+<p>How it looks like:</p>
+<div class="highlight"><pre><span></span><span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="cp">{{</span><span class="k">if</span> <span class="nv">user.isCool</span><span class="cp">}}</span>
+      <span class="nt">&lt;div&gt;</span><span class="cp">{{</span><span class="nv">user.name</span><span class="cp">}}</span> is cool<span class="nt">&lt;/div&gt;</span>
+    <span class="cp">{{</span><span class="k">else</span><span class="cp">}}</span>
+      <span class="nt">&lt;div&gt;</span><span class="cp">{{</span><span class="nv">user.name</span><span class="cp">}}</span> is not cool<span class="nt">&lt;/div&gt;</span>
+    <span class="cp">{{</span><span class="o">/</span><span class="k">if</span><span class="cp">}}</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</pre></div>
+
+
+<p>Of course, you can use the Beard not only for HTML generation.</p>
+<p>Some cool things are:</p>
+<ul>
+<li>
+<p>Curly braces tags for everything i.e. for the control flow tags such as <code>{{ if }}</code> or <code>{{ for }}</code> as well as for variable printing <code>{{ myvar }}</code>. Usually templates engines have different tags for above things e.g. Django Template Engine <code>{% if %}</code>, <code>{{ variable }}</code>.</p>
+</li>
+<li>
+<p>It uses <a href="http://www.antlr.org/">ANTLR</a> to generate a parser. ANTLR is a very interesting project itself, and it is very fast.</p>
+</li>
+<li>
+<p>There is all the common suff for template engines as blocks, template inheritance, the yeild statement, filters and so on.</p>
+</li>
+<li>
+<p>The project follows the good practices as a scala project. There are unit tests, performance tests and sbt used as a build tool.</p>
+</li>
+</ul>
+<p>Even though the project is actually used in a few real projects, there is still room for improvement. I encourage you to participate in the project either you are interested in Scala or grammar/lexer/parser stuff.</p>
+<p>I am happy that I had a chance to work on the open source project during my working hours, thanks to my new employer Zalando ([and it is hiring!]http://jobs.zalando.de/en/).</p>
   </div>
   
 <div class="article-tag-list">
 <span class="label label-default">Tags</span>
-	<a href="/tag/spoj.html"><i class="fa fa-tag"></i>spoj</a>&nbsp;
-	<a href="/tag/algorithms.html"><i class="fa fa-tag"></i>algorithms</a>&nbsp;
+	<a href="/tag/the-beard.html"><i class="fa fa-tag"></i>The Beard</a>&nbsp;
+	<a href="/tag/scala.html"><i class="fa fa-tag"></i>Scala</a>&nbsp;
+	<a href="/tag/template-engine.html"><i class="fa fa-tag"></i>template-engine</a>&nbsp;
 </div>  <hr />
   <div class="well well-sm">  <!-- Social media sharing buttons -->
 
@@ -102,7 +133,7 @@
 
     <!-- Facebook -->
     <div class="fb-like" 
-        data-href="/reached-the-goal-to-solve-50-problems-on-spoj.html" 
+        data-href="/the-beard-logicless-template-engine-in-scala.html" 
         data-layout="button_count" 
         data-action="like" data-show-faces="true" 
         data-share="true">
