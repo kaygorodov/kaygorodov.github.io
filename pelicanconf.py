@@ -37,7 +37,7 @@ EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
 THEME = './../voidy-bootstrap/'
 
 
-SITESUBTITLE ='A passionate software engineer.'
+SITESUBTITLE ='A Passionate Software Engineer.'
 SITETAG = "- a passionate software engineer, geek and just a good man."
 
 # Extra stylesheets, for bootstrap overrides or additional styling.
