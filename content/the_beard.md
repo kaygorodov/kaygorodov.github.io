@@ -37,4 +37,4 @@ Some cool things are:
 
 Even though the project is actually used in a few real projects, there is still room for improvement. I encourage you to participate in the project either you are interested in Scala or grammar/lexer/parser stuff.
 
-I am happy that I had a chance to work on the open source project during my working hours, thanks to my new employer Zalando ([and it is hiring!]http://jobs.zalando.de/en/).
+I am happy that I had a chance to work on the open source project during my working hours, thanks to my new employer Zalando [and it is hiring!](http://jobs.zalando.de/en/).
